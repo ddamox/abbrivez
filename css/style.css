@@ -1,0 +1,401 @@
+:root{
+
+    --default-font:montserrat;
+    --size:14px;
+}
+
+body{
+    width: 100vw;
+    font-family: montserrat;
+    font-weight: 300;
+  
+}
+.container{
+    width:100%;
+    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0) ); */
+    margin-top: -10px;
+    background: linear-gradient(132deg, #ec5218, #1665c1, purple);
+    background-size: 400% 400%;
+    animation: BackgroundGradient 20s ease infinite;
+}
+ 
+@keyframes BackgroundGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+} 
+
+
+.header{
+   
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   /* background:linear-gradient(
+                            rgb(68, 2, 68, 0.450),
+                            rgb(214, 149, 221, 0.458)
+                            ),
+                url("../img/abbrivez2.jpg");
+    background-image: linear-gradient(rgb(68, 2, 68), rgb(214, 149, 221)), url("../img/abbrivez.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+   
+}
+.menu{
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+}
+.menu-item{
+
+    padding-top: 12.5px;
+    color: #fff;
+    font-family: raleway;
+    font-size: 25px;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+
+.check-text{
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    color: #fff;
+
+   
+}
+
+@media (max-width:600px){
+    .check-text{
+        font-size: 15px;
+    }
+}
+
+.check-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+@media (max-width:600px){
+    .check-search{
+        
+    }
+}
+.check-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.check-form-input{
+    width: 65%;
+    padding: 1rem;
+    outline: none;
+    background-color: #fffeff;
+    border:none;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+
+}
+.check-form-input::-placeholder{
+    color: #342314;
+    padding: 0.2rem;
+}
+.check-form-btn{
+    width: 20%;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #440244;
+    box-shadow: 0 0 2rem #000;
+    cursor: pointer;
+}
+
+.check-form-btn:hover{
+    background-color: #fff;
+    color:#440244;
+}
+
+.check-output{
+    font-size: 20px;
+}
+
+@media (max-width:600px){
+    .check-output{
+        font-size: 12px;
+    }
+}
+/*ADD ABBRIEVATION SECTION */
+.add{
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+   /* background: linear-gradient( rgb(214, 149, 221, 0.85), rgba(68, 2, 68, 0.733)), url("../img/abbrivez1.jpg") ; */
+    border-bottom:  1px solid #873d90;
+    background-size: cover;
+}
+.add-text{
+    font-size: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    
+
+}
+.add-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-input1{
+    width: 25%;
+    padding: 1rem;
+    outline: none;
+    background-color: #440244;
+    border:none;
+    font-size: 1rem;
+    margin-right: .8rem;
+    color: #999;
+
+}
+
+.add-input1:hover{
+    color:#f0e9e9;
+}
+.add-input2{
+    width: 45%;
+    padding: 1rem;
+    outline: none;
+    background-color: #440244;
+    border:none;
+    font-size: 1rem;
+    margin-right: .8rem;
+    color: #999;
+}
+.add-input2:hover{
+    color:#f0e9e9;
+}
+.add-button{
+    width: 20%;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #440244;
+    box-shadow: 0 0 2rem #000;
+    cursor: pointer;
+    animation: addBtn 3s;
+
+
+}
+@keyframes addBtn{
+    0%{background-color: #fff;
+        color: #440244;
+    }
+    50%{background-color: #440244;
+        color: #fff;
+    }
+    100%{background-color: #fff;
+         color: #440244;
+        }
+}
+.add-button:hover{
+    background-color: #440244;
+    color: #fff;
+}
+
+
+
+
+/* QUOTE SECTION */
+
+.quote{
+    height: 300px;
+   /* background-image: linear-gradient(#440244, rgb(214, 149, 221)), url("../img/abbrivez.jpg") ; */
+
+    
+
+}
+
+.quote-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+}
+.quote-heading{
+        padding: 1rem;
+        text-align: center;
+        width: 25%;
+        background-color: rgb(252, 250, 250);
+        font-size: 1.5rem;
+        
+       
+}
+
+/*
+@keyframes quote{
+    0%{width:0%;
+        font-size: 0.5rem;
+       background-color: none;
+    }
+    30%{width:10%;
+        font-size: 0.7rem;
+        background-color: #fff;
+     
+}
+70%{width:20%;
+    font-size: 0.9rem;
+    background-color: #fff;
+ 
+}
+100%{width:25%;
+    font-size: 1.5rem;
+    background-color: #fff;
+ 
+}
+}; */
+
+.quote-text{
+    padding-left: 2rem;
+    
+    align-self: flex-start;
+}
+
+.footer{
+    margin-top: 0rem;
+    background:#000;
+    height: 400px;
+}
+.footer-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text{
+    color: #fff;
+    font-size: 16px;
+    font-family: montserrat;
+    text-align: center;
+    padding-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+}
+.name{
+    cursor: pointer;
+    color: #025f72;
+    transition: all 2s ease;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.name:hover{
+    
+    transform: rotate(30deg);
+
+}
+
+.name:active{
+    transform: rotate3d(20deg);
+}
+
+.footer-social{
+
+    color: #fff;
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.footer-social-text{
+    align-self: center;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+.fa-github{
+    color:#025f72;
+    font-size: 1.5rem;
+}
+.fa-twitter{
+   color: #0084b4;
+   font-size: 1.5rem;
+}
+
+.fa-github:hover{
+
+    color:#25ddee;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.fa-twitter:hover{
+
+    color:#25ddee;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.fa-codepen{
+    color: #fff;
+    font-size: 1.5rem;
+ }
+ 
+ .fa-codepen:hover{
+ 
+     color:#25ddee;
+     cursor: pointer;
+     transform: scale(1.5);
+ }
+ .fa-envelope{
+
+    color: #c25151;
+ }
+ 
+ .fa-envelope:hover{
+ 
+     color:#25ddee;
+     cursor: pointer;
+     transform: scale(1.5);
+ }
+
+a{
+    text-decoration: none;
+
+}
+
+.email{
+    color: #025f72;
+    font-weight: 500;
+}
+
+.email:hover{
+    transform: scale(1.3);
+}
